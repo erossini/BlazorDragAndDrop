@@ -23,7 +23,7 @@
 
             @if (draggingModel is not null)
             {
-                // this is overlay for droping. Otherwise it flickers between dragenter and leave, bsc of child elemnt
+                // this is overlay for droping. Otherwise it flickers between dragenter and leave, bsc of child element
                 // this overlays the child elements of <li>
                 <div class="position-absolute w-100 h-100 " style="top:0px;left:0px;
                      @(item.IsDragOver?"border-top-color:red;border-top-style: solid;border-top-width:thick;":"")"
@@ -69,7 +69,9 @@
         
         // increase model uned by 1
         Models.Where(x => x.Order >= landingModel.Order).ToList().ForEach(x => x.Order++);
-        draggingModel.Order = originalOrderLanding;//replace landing model
+        draggingModel.Order = originalOrderLanding;
+        
+        // replace landing model
         int ii = 0;
         foreach (var model in Models.OrderBy(x => x.Order).ToList())
         {
