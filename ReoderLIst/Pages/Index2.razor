@@ -23,8 +23,8 @@
 
             @if (draggingModel is not null)
             {
-                //this is overlay for droping. Otherwise it flickers between dragenter and leave, bsc of child elemnt
-                //this overlays the child elements of <li>
+                // this is overlay for droping. Otherwise it flickers between dragenter and leave, bsc of child elemnt
+                // this overlays the child elements of <li>
                 <div class="position-absolute w-100 h-100 " style="top:0px;left:0px;
                      @(item.IsDragOver?"border-top-color:red;border-top-style: solid;border-top-width:thick;":"")"
                      @ondrop="()=>HandleDrop(item)"

@@ -7,7 +7,13 @@ As well as being an intuitive interface for the user, it can definitely add a bi
 
 ### Reorder list
 
+Basic example for reorder list
+
 ![Blazor reorder list](./Screenshots/ReoderList-Example.gif)
+
+A bit complex example
+
+![Blazor reorder list](./Screenshots/ReoderList2-Example.gif)
 
 ### Kanban board
 
